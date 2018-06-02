@@ -17,11 +17,13 @@ def welcome():
 
 @app.route("/motivation/")
 def motivation():
-    message = "Spicy jalapeno bacon ipsum dolor amet ham pork fatback, meatball chuck turkey sirloin ribeye jowl " \
-              "tri-tip alcatra bresaola prosciutto boudin. Porchetta boudin pork chop landjaeger burgdoggen bacon " \
-              "ribeye filet mignon spare ribs pastrami chicken fatback capicola venison t-bone. Capicola turducken " \
-              "shank, pancetta cow pork belly pork loin porchetta drumstick burgdoggen. Hamburger biltong short ribs," \
-              " cow andouille t-bone jerky ham spare ribs tail landjaeger beef turkey buffalo swine."
+    message = """Na het volgen van de bootcamp hoop ik: Een beter beeld te hebben van best practices op het gebied van 
+testautomatisering; Te leren van inzichten en perspectieven van mede-bootcampers; Uitgedaagd te worden om een nieuwe
+test tool en programmeertaal te proberen; Mijn portfolio met test automation code met een flink aantal scripts uit
+te breiden; Beter te begrijpen hoe je test automation aan pakt om zinnige en stabiele testcases te maken, en 
+last but certainly not least: Het lijkt me gewoon heel erg vet om aan de bootcamp mee te doen!!
+    """
+
     return jsonify(
         author="Ico Bakker",
         message=message
